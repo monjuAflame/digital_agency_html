@@ -1,0 +1,147 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Digital Agency
+Version:    1.0
+Last change:    10/05/2024 [fixed Float bug, vf]
+Author Name:	Ismail Hossain
+Primary use:    Landing Page
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Number of contents]
+
+1. Reset Css
+2. Dafult Css
+3. Button Css
+4. 
+5. features Section
+-------------------------------------------------------------------*/
+
+/*
+==========================================
+    1--Reset Css
+==========================================
+*/
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+/*
+==========================================
+    2--Dafult Css
+==========================================
+*/
+
+.section__padding {
+  padding: 120px 0;
+}
+
+.text__primary {
+  color: #e5382a;
+}
+.text__body {
+  color: #929191;
+}
+.text__secondary {
+  color: #242424;
+}
+
+.bg__primary {
+  background-color: #e5382a;
+}
+.bg__secondary {
+  background-color: #242424;
+}
+.bg__nutral {
+  background-color: #edf1f3;
+}
+
+/*
+==========================================
+    3--Button Css
+==========================================
+*/
+.theme__btn {
+  border: none;
+  font-family: Open Sans;
+  font-weight: bold;
+  /* border-radius: 68px; */
+  position: relative;
+  padding: 15px 35px;
+}
+.largeBtn {
+  padding: 0 60px;
+  font-size: 18px;
+  height: 60px;
+  border-radius: 30px 30px;
+}
+.smallBtn {
+  font-size: 18px;
+  font-family: Lato;
+  padding: 18px 45px;
+  margin: 20px 0 0;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+}
+.lujosBtn:hover {
+  background: #4c86c6;
+  color: #fff;
+  box-shadow: 0 0 5px -1px #000;
+}
+
+/*
+==========================================
+    5--Features Section
+==========================================
+*/
+
+.feature_content {
+  border: 1px solid #cecece;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: relative;
+  padding: 30px 30px 30px 35px;
+  border-left-width: 0px;
+  z-index: 1;
+}
+
+.feature_content::before {
+  position: absolute;
+  height: calc(100% + 1px);
+  width: 5px;
+  background: linear-gradient(#e5382a 38%, black);
+  content: "";
+  left: 0;
+  top: -1px;
+  z-index: 2;
+}
+
+.feature_content__heading {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.feature_content__text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
