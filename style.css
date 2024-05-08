@@ -117,7 +117,9 @@ body {
   text-decoration: none;
   border-radius: 6px;
 }
-
+.btn__primary:hover {
+  background-color: #ec4b40;
+}
 .btn__small {
   padding: 10px 20px;
 }
@@ -138,6 +140,9 @@ body {
 .btn__secondary {
   background-color: #242424;
   color: #fff;
+}
+.btn__secondary:hover {
+  background-color: #171616;
 }
 .theme__btn_text_icon {
   font-size: 16px;
