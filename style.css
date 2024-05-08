@@ -111,6 +111,7 @@ body {
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
+  padding: 10px 40px;
   font-family: "Space Grotesk", sans-serif;
   text-decoration: none;
   border-radius: 6px;
@@ -125,7 +126,7 @@ body {
 }
 
 .btn__large {
-  padding: 10px 40px;
+  padding: 12px 50px;
 }
 
 .btn__primary {

@@ -8,20 +8,20 @@
     right: -22px;
   }
   .slider_content__title {
-    font-size: 65px;
+    font-size: 60px;
     line-height: 70px;
   }
   .hero__section__shape_one {
-    min-width: 388px;
-    min-height: 607px;
+    min-width: 364px;
+    min-height: 517px;
     top: 0;
     right: 0;
   }
   .hero__section__shape_two {
-    min-width: 596px;
-    min-height: 625px;
-    bottom: 24px;
-    right: 57px;
+    min-width: 409px;
+    min-height: 500px;
+    bottom: 147px;
+    right: 104px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {

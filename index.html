@@ -21,10 +21,23 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/library/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/library/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
+
+    <!-- <div class="owl-carousel">
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+    </div> -->
 
     <!--Hero Section Start-->
     <section id="hero" class="hero__section">
@@ -34,46 +47,115 @@
         <div class="hero__section__overly"></div>
         <!-- background -->
 
-        <!-- shape -->
-        <div class="hero__section__shape_one" style="
-                        background-image: url('./assets/images/slider_object.png');"></div>
-        <div class="hero__section__shape_two" style="
-                                        background-image: url('./assets/images/hero_slider_1.png');"></div>
-        <!-- shape -->
 
 
-        <div class="container">
-            <div class="row">
-                <div class="col col-md-9 col-lg-7 col-xl-7">
-                    <div class="slider_content">
-                        <h1 class="slider_content__title font__space_grotesk">
-                            The Power of Growth-Centric <span class="text__primary">Digital Agencies</span>
-                        </h1>
-                        <p class="slider_content__text text-white py-4">There are many variations of passages of Lorem
-                            Ipsum
-                            avalab but
-                            the majority have suffered alteration in some form, by
-                            injected humour, or randomised words which don't</p>
-                        <div class="slider_content__others">
-                            <a href="#" class="theme__btn btn__large btn__primary">Discover More</a>
-                            <div
-                                class="slider_content__others__user_text theme__btn btn__extra_small bg__transparent rounded-pill overflow-hidden">
-                                <div class="slider_content__others__user_text__list">
-                                    <div class="single_user_avatar">
-                                        <img src="./assets/images/user1.jpg" alt="">
-                                    </div>
-                                    <div class="single_user_avatar">
-                                        <img src="./assets/images/user2.jpg" alt="">
-                                    </div>
-                                    <div class="single_user_avatar">
-                                        <div class="single_user_avatar__add_user">
-                                            <i class="fa fa-plus"></i>
+        <div class="owl-carousel" data-owl-options='{
+		"loop": true,
+		"animateOut": "fadeOut",
+		"animateIn": "fadeIn",
+		"items": 1,
+		"autoplay": true,
+		"autoplayTimeout": 7000,
+		"smartSpeed": 2000,
+		"nav": false,
+        "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+		"dots": true,
+		"margin": 0
+	    }'>
+            <div class="slider_item">
+                <!-- shape -->
+                <div class="hero__section__shape_one" style="
+                                        background-image: url('./assets/images/slider_object.png');"></div>
+                <div class="hero__section__shape_two" style="
+                                                        background-image: url('./assets/images/hero_slider_1.png');">
+                </div>
+                <!-- shape -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-md-9 col-lg-7 col-xl-6">
+                            <div class="slider_content">
+                                <h1 class="slider_content__title font__space_grotesk">
+                                    The Power of Growth-Centric <span class="text__primary">Digital Agencies</span>
+                                </h1>
+                                <p class="slider_content__text text-white py-4">There are many variations of passages of
+                                    Lorem
+                                    Ipsum
+                                    avalab but
+                                    the majority have suffered alteration in some form, by
+                                    injected humour, or randomised words which don't</p>
+                                <div class="slider_content__others">
+                                    <a href="#" class="theme__btn btn__primary">Discover More</a>
+                                    <div
+                                        class="slider_content__others__user_text theme__btn btn__extra_small bg__transparent rounded-pill overflow-hidden">
+                                        <div class="slider_content__others__user_text__list">
+                                            <div class="single_user_avatar">
+                                                <img src="./assets/images/user1.jpg" alt="">
+                                            </div>
+                                            <div class="single_user_avatar">
+                                                <img src="./assets/images/user2.jpg" alt="">
+                                            </div>
+                                            <div class="single_user_avatar">
+                                                <div class="single_user_avatar__add_user">
+                                                    <i class="fa fa-plus"></i>
+                                                </div>
+                                                <img src="./assets/images/user2.jpg" alt="">
+                                            </div>
                                         </div>
-                                        <img src="./assets/images/user2.jpg" alt="">
+                                        <p class="slider_content__others__user_text__text text-white">2k+ Happy Client
+                                        </p>
+
                                     </div>
                                 </div>
-                                <p class="slider_content__others__user_text__text text-white">2k+ Happy Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item">
+                <!-- shape -->
+                <div class="hero__section__shape_one" style="
+                                                    background-image: url('./assets/images/slider_object.png');"></div>
+                <div class="hero__section__shape_two"
+                    style="
+                                                                    background-image: url('./assets/images/hero_slider_1.png');">
+                </div>
+                <!-- shape -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-md-9 col-lg-7 col-xl-6">
+                            <div class="slider_content">
+                                <h1 class="slider_content__title font__space_grotesk">
+                                    The Power of Growth-Centric <span class="text__primary">Digital Agencies</span>
+                                </h1>
+                                <p class="slider_content__text text-white py-4">There are many variations of passages of
+                                    Lorem
+                                    Ipsum
+                                    avalab but
+                                    the majority have suffered alteration in some form, by
+                                    injected humour, or randomised words which don't</p>
+                                <div class="slider_content__others">
+                                    <a href="#" class="theme__btn btn__primary">Discover More</a>
+                                    <div
+                                        class="slider_content__others__user_text theme__btn btn__extra_small bg__transparent rounded-pill overflow-hidden">
+                                        <div class="slider_content__others__user_text__list">
+                                            <div class="single_user_avatar">
+                                                <img src="./assets/images/user1.jpg" alt="">
+                                            </div>
+                                            <div class="single_user_avatar">
+                                                <img src="./assets/images/user2.jpg" alt="">
+                                            </div>
+                                            <div class="single_user_avatar">
+                                                <div class="single_user_avatar__add_user">
+                                                    <i class="fa fa-plus"></i>
+                                                </div>
+                                                <img src="./assets/images/user2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <p class="slider_content__others__user_text__text text-white">2k+ Happy Client
+                                        </p>
 
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -83,11 +165,12 @@
     </section>
     <!--Hero Section End-->
 
+
     <!--Features Section Start-->
     <section id="feature" class="feature_section section__padding">
         <div class="container">
             <div class="row g-3">
-                <div class="col-12 col-md">
+                <div class="col-12 col-md" data-aos="fade-up" data-aos-anchor-placement="bottom-center">
                     <div class="feature_content">
                         <h3 class="feature_content__heading text__secondary font__space_grotesk">Business Planning
                             Strategies</h3>
@@ -101,7 +184,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md">
+                <div class="col-12 col-md" data-aos="fade-up" data-aos-anchor-placement="bottom-center">
                     <div class="feature_content">
                         <h3 class="feature_content__heading text__secondary font__space_grotesk">Professional Team
                             Members</h3>
@@ -115,7 +198,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md">
+                <div class="col-12 col-md" data-aos="fade-up" data-aos-anchor-placement="bottom-center">
                     <div class="feature_content">
                         <h3 class="feature_content__heading text__secondary font__space_grotesk">Enjoy the People You
                             Work With</h3>
@@ -245,7 +328,34 @@
     <!--Features Section End-->
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function () {
+            AOS.init();
+            // $(".owl-carousel").owlCarousel({
+            //     items: 1,
+            //     center: true,
+            //     animateOut: 'slideOutDown',
+            //     animateIn: 'flipInX',
+            // });
+            let careoxowlCarousel = $(".owl-carousel");
+            if (careoxowlCarousel.length) {
+                careoxowlCarousel.each(function () {
+                    let elm = $(this);
+                    let options = elm.data("owl-options");
+                    let thmOwlCarousel = elm.owlCarousel(
+                        "object" === typeof options ? options : JSON.parse(options)
+                    );
+                    elm.find("button").each(function () {
+                        $(this).attr("aria-label", "carousel button");
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
