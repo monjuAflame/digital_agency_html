@@ -75,6 +75,25 @@ body {
   background-color: #edf1f3;
 }
 
+
+.bg__transparent {
+  position: relative;
+  z-index: 1;
+}
+.bg__transparent:before {
+  position: absolute;
+  content: "";
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .2;
+  top: 0;
+  left: 0;
+}
+
+
+
 .border__secondary {
   border-color: #242424;
 }
@@ -91,6 +110,25 @@ body {
     3--Button Css
 ==========================================
 */
+.theme__btn {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+  text-decoration: none;
+  padding: 10px 40px;
+  border-radius: 6px;
+}
+
+.btn__primary {
+  background-color: #e5382a;
+  color: #fff;
+}
+
+.btn__secondary {
+  background-color: #242424;
+  color: #fff;
+}
 .theme__btn_text_icon {
   font-size: 16px;
   font-weight: 700;
@@ -124,6 +162,73 @@ body {
   font-size: 12px;
   rotate: -45deg;
 }
+
+/* hero */
+.hero__section {
+  position: relative;
+  z-index: 1;
+}
+.hero__section_background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.hero__section_overly {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #242424;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .85;
+}
+.slider_content {
+	padding: 200px 0 160px 0;
+}
+.slider_content__title {
+	font-size: 70px;
+	font-weight: 700;
+	line-height: 80px;
+  color: #fff;
+}
+.slider_content__text {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 30px;
+}
+.slider_content__others {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 20px;
+}
+.slider_content__others__user_text {
+	display: flex;
+	gap: 10px;
+}
+.slider_content__others__user_text__list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.single_user_avatar {
+	height: 35px;
+	width: 35px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
 
 /*
 ==========================================
@@ -338,17 +443,6 @@ body {
   width: var(--experiance_percentage);
   background-color: red;
   border-radius: 50px;
-}
-.theme__btn {
-  font-size: 18px;
-  line-height: 40px;
-  font-weight: 700;
-  font-family: "Space Grotesk", sans-serif;
-  text-decoration: none;
-  padding: 10px 40px;
-  background-color: #242424;
-  color: #fff;
-  border-radius: 6px;
 }
 
 .about_image {
