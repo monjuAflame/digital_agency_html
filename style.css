@@ -14,8 +14,9 @@ Primary use:    Landing Page
 1. Reset Css
 2. Dafult Css
 3. Button Css
-4. 
+4. Hero Section
 5. features Section
+6. About Section
 -------------------------------------------------------------------*/
 
 /*
@@ -172,12 +173,18 @@ body {
   rotate: -45deg;
 }
 
-/* hero */
-.hero__section {
+/*
+==========================================
+    2--Hero Section
+==========================================
+*/
+
+.hero-section,
+.hero-section__carousel-item {
   position: relative;
   z-index: 1;
 }
-.hero__section__background {
+.hero-section__background {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -188,7 +195,7 @@ body {
   left: 0;
   z-index: -1;
 }
-.hero__section__overly {
+.hero-section__overly {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -200,7 +207,7 @@ body {
 }
 
 /* shape */
-.hero__section__shape_one {
+.hero-section__carousel-item__shape_one {
   position: absolute;
   min-width: 492px;
   min-height: 663px;
@@ -211,7 +218,7 @@ body {
   right: 0;
   z-index: -1;
 }
-.hero__section__shape_two {
+.hero-section__carousel-item__shape_two {
   position: absolute;
   min-width: 795px;
   min-height: 805px;
@@ -221,33 +228,112 @@ body {
   bottom: -68px;
   right: 77px;
   z-index: -1;
+  animation-fill-mode: both;
+  animation-duration: 1s;
 }
 
-.slider_content {
+.hero-section__carousel-item__shape_three {
+  position: absolute;
+  width: 119px;
+  height: 114px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: 25%;
+  left: 5%;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+.hero-section__carousel-item__shape_four {
+  position: absolute;
+  width: 119px;
+  height: 114px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  bottom: 16%;
+  left: 7%;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
+.hero-section__carousel-item__shape_five {
+  position: absolute;
+  width: 138px;
+  height: 139px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  bottom: 5%;
+  right: 31%;
+  background-size: auto;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+.hero-section__carousel-item__shape_three img {
+  animation: swing 3s ease 0s infinite;
+}
+.hero-section__carousel-item__shape_four img {
+  animation: swing 3s ease 0s infinite;
+}
+.hero-section__carousel-item__shape_five img {
+  width: 100%;
+  height: auto;
+  animation: heartBeat 3s ease 0s infinite;
+}
+.shape__style img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-section__carousel-item__loading {
+  position: absolute;
+  background: #e5382a;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  animation-fill-mode: both;
+  animation-duration: 1.3s;
+}
+
+/* shape */
+
+/* content */
+.slider-content {
   padding: 190px 0 160px 0;
 }
-.slider_content__title {
+.slider-content__title {
   font-size: 70px;
   font-weight: 700;
   line-height: 80px;
   color: #fff;
+  animation-fill-mode: both;
+  animation-duration: 1s;
 }
-.slider_content__text {
+.slider-content__text {
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
+  animation-fill-mode: both;
+  animation-duration: 1s;
 }
-.slider_content__others {
+.slider-content__others__button {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+.slider-content__others {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 30px;
 }
-.slider_content__others__user_text {
+.slider-content__others__user_text {
   display: flex;
   gap: 10px;
+  animation-fill-mode: both;
+  animation-duration: 1s;
 }
-.slider_content__others__user_text__list {
+.slider-content__others__user_text__list {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -291,6 +377,55 @@ body {
 .single_user_avatar__add_user:hover {
   opacity: 0.9;
 }
+/* content */
+
+/* animation */
+.hero-section__carousel .active .hero-section__carousel-item__loading {
+  opacity: 0;
+  display: none;
+  animation-delay: 1.3s;
+}
+.hero-section__carousel .active .slider-content__title {
+  opacity: 1;
+  animation-delay: 1.3s;
+  animation-name: jackInTheBox;
+}
+.hero-section__carousel .active .slider-content__text {
+  opacity: 1;
+  animation-delay: 1.3s;
+  animation-name: fadeInDown;
+}
+.hero-section__carousel .active .slider-content__others__button {
+  opacity: 1;
+  animation-delay: 1.3s;
+  animation-name: fadeInLeft;
+}
+.hero-section__carousel .active .slider-content__others__user_text {
+  opacity: 1;
+  animation-delay: 1.3s;
+  animation-name: fadeInRight;
+}
+.hero-section__carousel .active .hero-section__carousel-item__shape_two {
+  opacity: 1;
+  animation-delay: 1.3s;
+  animation-name: fadeInLeft;
+}
+.hero-section__carousel .active .hero-section__carousel-item__shape_three {
+  opacity: 1;
+  animation-delay: 1.3s;
+  animation-name: rotateIn;
+}
+.hero-section__carousel .active .hero-section__carousel-item__shape_four {
+  opacity: 1;
+  animation-delay: 1.3s;
+  animation-name: rotateIn;
+}
+.hero-section__carousel .active .hero-section__carousel-item__shape_five {
+  opacity: 1;
+  animation-delay: 0.3s;
+  animation-name: rotateIn;
+}
+/* animation */
 
 /*
 ==========================================
@@ -350,7 +485,11 @@ body {
   opacity: 1;
 }
 
-/*  */
+/*
+==========================================
+    6--About Section
+==========================================
+*/
 .about_section {
   background-color: #ffefee;
   position: relative;
@@ -360,7 +499,6 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("/assets/images/about/overly.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -464,7 +602,7 @@ body {
   height: auto;
 }
 
-/*  */
+/* expeiance */
 
 .about_content_experiance__single {
   display: flex;
@@ -507,6 +645,7 @@ body {
   border-radius: 50px;
 }
 
+/* about right side image */
 .about_image {
   position: relative;
   padding: 0 0 85px 0;
@@ -529,6 +668,7 @@ body {
   padding: 60px 32px;
   border-radius: 111px;
   color: #fff;
+  left: 86px;
 }
 
 .about_image__experiance_text {
